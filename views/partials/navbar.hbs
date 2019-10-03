@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="text-white navbar-brand" href="/">
+        <i class="fab fa-pagelines"></i>Glorias Supermarket
+
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto menu">
+            {{!-- {{#if user}} --}}
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Vegetables</a>
+                    <a class="dropdown-item" href="#">Fruits</a>
+                    <a class="dropdown-item" href="#">Cereals</a>
+                    <a class="dropdown-item" href="#">Meats</a>
+                    <a class="dropdown-item" href="#">Despensa</a>
+                    <a class="dropdown-item" href="#">Grocery</a>
+                    <a class="dropdown-item" href="#">Diary Products</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            {{!-- {{else}} --}}
+            <li class="nav-item">
+                <a class="nav-link" href="/signin">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/signup">Register</a>
+            </li>
+            {{!-- {{/if}} --}}
+
+        </ul>
+
+        <form class="form-inline mt-2 mt-md-0 disebled text-white">
+            <i class="far fa-user"></i>Hola {{user.name}}
+
+            {{!-- <a href="/admin" class="nav-link disebled text-white"> --}}
+            <a class="nav-link " style="color: rgba(255,255,255,.5);" class="dropdown-item" href="/logout">Logout
+
+            </a>
+
+        </form>
+        <a class="btn btn-success btn-sm ml-3" href="/cart">
+            <i class="fa fa-shopping-cart"></i> Cart
+
+            <span class="badge badge-light"></span>
+        </a>
+
+
+    </div>
+
+</nav>

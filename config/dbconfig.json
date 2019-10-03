@@ -1,0 +1,9 @@
+{
+  "dev": [
+    "mongodb+srv://caborryer:holi1234@cluster0-xzv2n.mongodb.net/gloriasSupermarket?retryWrites=true&w=majority",
+    {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  ]
+}

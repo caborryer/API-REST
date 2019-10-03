@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Hola {{user.name}}</h1>
+
+    <div class="container p-5">
+        <h5>Upload your product image</h5>
+        <form action="/img/upload" enctype="multipart/form-data" method="POST">
+            <div class="form-group">
+                <input type="file" name="image">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Upload">
+        </form>
+    </div>
+
+    {{!-- <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card mt-4 text-center">
+                <div class="card-header">
+                    <h5>Upload your product image</h5>
+                </div>
+                <form action="/public/img/uploads/" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="image">
+                    <button>
+                        Save
+                    </button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div> --}}
+
+
+
+
+
+
+</body>
+
+</html>
