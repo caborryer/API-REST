@@ -1,0 +1,174 @@
+{{!-- <div class="container">
+  <div class="row">
+   {{#each name as |name|}} 
+    <div class="col">
+      {{> card name=name}}
+    </div>
+  {{/each}}  
+  </div>
+ 
+</div> --}}
+
+<body>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+    <h1 class="display-4 mt-4">Products</h1>
+
+  </div>
+
+  <div class="container" id="lista-productos">
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Lemons</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/vegetables/lemon.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio"> $<span class="">5000</span></h1>
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Tomatoes </h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/vegetables/tomato.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">3000</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Lettuce</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/vegetables/lechuga.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">4000</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Add to cart</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Apple</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/fruits/apple.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">5900</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Banana</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/fruits/banana.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">5769</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Orange</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/fruits/orange.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">2599</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Add to cart</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Oats</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/cereals/avena.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">4299</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Bread</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/cereals/bread.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">869</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Pasta</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/cereals/pasta.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">5397</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Add to cart</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="../../public/js/cart" async></script>
+
+
+</body>

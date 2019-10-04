@@ -7,7 +7,6 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const morgan = require("morgan");
 
-
 //Inializations
 const app = express();
 require("./config/config");
@@ -58,7 +57,7 @@ app.use(require("./routes/indexViews"));
 // app.use(require('./routes/image.routes'));
 
 // static files
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/public", express.static(path.join(__dirname, "./public")));
 
 app.listen(app.get("port"), () => {
   console.log(`Server on port ${app.get("port")}`);

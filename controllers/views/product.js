@@ -11,19 +11,19 @@ router.get("/img/upload", (req, res) => {
   res.render("index");
 });
 
-const storage = multer.diskStorage({
-  destination: path.join(__dirname, "../../public/img/vegetables"),
-  filename: (req, file, cb) => {
-    cb(null, file.originalname);
-  }
-});
-
 // const storage = multer.diskStorage({
-//   destination: path.join(__dirname, "../../public/img/cereals"),
+//   destination: path.join(__dirname, "../../public/img/fruits"),
 //   filename: (req, file, cb) => {
-//     cb(null, uuid() + path.extname(file.originalname));
+//     cb(null, file.originalname);
 //   }
 // });
+
+const storage = multer.diskStorage({
+  destination: path.join(__dirname, "../../public/img"),
+  filename: (req, file, cb) => {
+    cb(null, uuid() + path.extname(file.originalname));
+  }
+});
 
 const uploadImage = multer({
   storage,
