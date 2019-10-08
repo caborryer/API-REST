@@ -39,6 +39,35 @@
             {{!-- {{{/if}} --}}
 
         </ul>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class=" btn btn-success btn-sm ml-3 nav-link dropdown-toggle img-fluid" height="70px"
+                        width="60px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="fa fa-shopping-cart"></i> Cart <span
+                            class="badge badge-light"></span></a>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Img</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Delete</a>
+                        <a href="#" id="procesar-pedido" class=""></a>
+                        <a id="procesar-pedido" class="btn btn-danger btn-block" href="compra">Order
+                        </a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
 
         <form class="form-inline mt-2 mt-md-0 disebled text-white">
             <i class="far fa-user"></i>Hola {{user.name}}
@@ -49,11 +78,7 @@
             </a>
 
         </form>
-        <a class="btn btn-success btn-sm ml-3" href="/cart">
-            <i class="fa fa-shopping-cart"></i> Cart
 
-            <span class="badge badge-light"></span>
-        </a>
 
 
     </div>

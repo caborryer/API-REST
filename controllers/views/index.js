@@ -8,12 +8,16 @@ router.get("/", (req, res) => {
 router.get("/about", (req, res) => {
   res.render("about");
 });
-router.get("/cart", (req, res) => {
-  res.render("cart");
-});
 
 router.get("/product", (req, res) => {
   res.render("product");
+});
+
+router.get("/compra", (req, res) => {
+  res.render("compra");
+});
+router.get("/succes", (req, res) => {
+  res.render("succes");
 });
 
 module.exports = router;

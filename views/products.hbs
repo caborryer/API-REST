@@ -1,13 +1,4 @@
-{{!-- <div class="container">
-  <div class="row">
-   {{#each name as |name|}} 
-    <div class="col">
-      {{> card name=name}}
-    </div>
-  {{/each}}  
-  </div>
- 
-</div> --}}
+
 
 <body>
 
@@ -144,31 +135,53 @@
       </div>
 
     </div>
+    
+
+    <div class="card-deck mb-3 text-center">
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Beef</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/meats/beef.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">5900</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Eggs</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/meats/eggs.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">5769</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-bold">Chicken</h4>
+        </div>
+        <div class="card-body">
+          <img src="../public/img/meats/chicken.jpg" class="card-img-top">
+          <h1 class="card-title pricing-card-title precio">$ <span class="">2599</span></h1>
+
+
+          <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Add to cart</a>
+        </div>
+      </div>
+
+    </div>
 
 
   </div>
-  <section class="container content-section">
-    <h2 class="section-header">CART</h2>
-    <div class="cart-row">
-      <span class="cart-item cart-header cart-column">ITEM</span>
-      <span class="cart-price cart-header cart-column">PRICE</span>
-      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-
-    </div>
-    <div class="cart-items">
-    </div>
-    <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">$0</span>
-    </div>
-    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-  </section>
-
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/sweetalert2.min.js"></script>
-  <script src="../../public/js/cart" async></script>
-
+ 
 
 </body>
